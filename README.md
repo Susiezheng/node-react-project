@@ -1,4 +1,4 @@
-#edsp-atp-ui
+#node-react-project
 搭建环境手册：
 
 		1.安装nodejs，下载nodejs的最新版本：https://nodejs.org/en/进行安装;

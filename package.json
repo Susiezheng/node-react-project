@@ -1,7 +1,6 @@
 {
-  "name": "edsp-atp-ui",
+  "name": "node-react-project",
   "version": "1.0.0",
-  "description": "SunEDSP ATP UI, Version: $version$",
   "scripts": {
     "test": "jest",
     "lint": "./node_modules/.bin/eslint --ext .js src",
