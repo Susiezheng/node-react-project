@@ -1,0 +1,30 @@
+@import url('../../style/variable.less');
+
+label[class*="label"] {
+    display: inline-block;
+    font-weight: 500;
+    padding: 1px 4px 0 4px;
+    line-height: 1.5384616;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .1px;
+    border-radius: 2px;
+    color: @white;
+    a {
+        color: inherit;
+    }
+}
+
+.label-success {
+    background-color: @success;
+}
+.label-info {
+    background-color: @info;
+}
+.label-error {
+    background-color: @error;
+}
+.label-warning {
+    background-color: @warning;
+}

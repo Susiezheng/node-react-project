@@ -1,0 +1,9 @@
+{
+  "chooseRole" : "choose role",
+  "ok" : "ok",
+  "cancel" : "cancel",
+  "systemName" : "Automated test management platform",
+  "loginMessage" : "please input loginMessage",
+  "pwdMessage" : "please input pwdMessage",
+  "login" : "login"
+}

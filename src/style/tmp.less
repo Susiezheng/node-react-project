@@ -1,0 +1,235 @@
+@import url('./variable.less');
+
+@header-bk-color: #37474f;
+@menu-bk-color: #263238;
+@slider-border-top-color: #4b5960;
+@content-header-border: #dddddd;
+@header-height: 44px;
+
+i + span:not([class*='ant']) {
+    margin-left: 10px;
+}
+
+#root {height: 100%;}
+
+#particles-js{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 0;}
+
+/*antd组件样式修改*/
+.ant-tooltip-inner{
+   word-wrap: break-word;
+}
+
+#header {position: fixed;width: 100%;height: @header-height;padding: 0px;background-color: @header-bk-color;z-index: 999;box-shadow: 0 2px 5px @menu-bk-color;
+    .logo {float: left;width: 200px;height: 100%;background: url(../images/logo.png) center no-repeat;background-color: inherit;background-size: 55%;}
+    .header-menu{width:100%;background-color: @slider-border-top-color;height:@header-height;
+      i{float:left;margin-left:20px;line-height:@header-height;color:@white;cursor:pointer;}
+      i:hover{color:#e6dfdf;}
+      ul{float:left;color:@white;
+        li{float:left;line-height:@header-height;padding-left:48px;cursor:pointer;}
+        li:hover{color:#e6dfdf;}
+      }
+      .login-message{margin-right:30px;}
+      .language-message{
+        margin-left: 20px;
+        line-height: 44px;
+        height: 44px;
+        color: #fff;
+        cursor: pointer;
+        .selectLan{
+          width: 100px;
+        }
+      }
+    }
+}
+/*下拉菜单css*/
+#dropMenu{position:fixed;width:100%;min-height:334px;height:auto;top:@header-height;background: @white;z-index:1000;border-bottom: 1px solid #ddd;box-shadow: 0 1px 2px #ddd;display:block;
+   &:before{border: 10px solid transparent;border-bottom: 10px solid @white;width: 0;height: 0;position: absolute;content:'';left:218px;top:-19px;}
+   &>ul{float:left;min-height:274px;height:auto;margin:30px 0;width:218px;border-right:solid 1px #ddd;
+     li{text-align: center;cursor: pointer;}
+     .menu-title{font-size:15px;color:@lightGreen;margin-bottom: 10px;
+         span{margin-left:5px;}
+         i.icons-opts{margin-right:15px;color:@lightGreen;font-size:14px;line-height:24.8px;}
+     }
+   }
+   .ant-menu{border:0;}
+}
+
+/*表格操作按钮css*/
+.opt-btn{
+  i{cursor: pointer;}
+  span + i {margin-left: 5px;}
+  i + span{margin-left: 5px;}
+}
+.opt-header{
+  i{margin-left: 5px;cursor: pointer;}
+}
+
+#slider {
+    position: fixed;
+    top: @header-height;
+    height: 100%;
+    overflow-y: auto;
+    border-top: 1px solid @slider-border-top-color;
+    background-color:@slider-border-top-color;
+    .slider-title {
+        margin-top: 10px;
+        padding: 10px 24px;
+        height: 43px;
+        color: @white;
+    }
+
+    .ant-menu-dark {
+        background-color: inherit;
+        .ant-menu-sub {
+            background-color: @menu-bk-color;
+        }
+        .ant-menu-item {
+            border-left: 3px solid transparent; /* 处理增加左边框后的偏移问题 */
+        }
+        .ant-menu-item-selected {
+            border-left: 3px solid @primary-color;
+            background-color: @menu-bk-color;
+            & * {
+                color: @primary-color;
+            }
+        }
+    }
+}
+
+#main {
+    min-height: 100%;
+    margin-top: @header-height;
+    margin-left: 200px;
+    #content {
+        .content-header {
+            position: fixed;
+            width: 100%;
+            z-index: 500;
+            padding: 0 20px 0 20px;
+            height: 37px;
+            line-height: 37px;
+            background-color: @white;
+            border-bottom: 1px solid @content-header-border;
+        }
+        .backup{position:fixed;top:49px;right:23px;}
+        .gateway_node{position:fixed;width:130px;top:49px;right:138px;}
+        .main-content {
+            margin: 47px 10px 10px;
+            overflow:auto;
+            min-width:1000px;
+        }
+    }
+}
+
+
+.toolBar {
+    margin: 10px 0;
+    position: relative;
+
+    [class*='ant-col'] {
+        margin-bottom: 10px;
+    }
+}
+.content{
+  padding:0 20px 20px;
+}
+.edsp-components{
+    p {
+        margin:0 20px 10px 0;
+    }
+}
+
+button + button {
+    margin-left: 5px;
+}
+
+.ant-table-tbody > tr.ant-table-row-hover > td,
+.ant-table-tbody > tr[class*='expanded']:hover > td {
+    background-color: @white
+}
+
+.params-panel {
+    font-size: 14px;
+    word-break: break-all;
+    margin-left: -47px;
+    display: flex!important;
+    flex-wrap: wrap;
+    flex: auto;
+    .params-item {
+        padding: 0 5px;
+        .key {
+            padding: 5px 0;
+            font-weight: bold;
+        }
+        .val {
+            color: @primary-color;
+            background-color: #dcdcdc;
+            padding: 5px;
+            border-radius: 3px;
+            min-height: 31px;
+            max-height: 52px;
+            height: calc(~"100% - 31px");
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: #dcdcdc;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 2px;
+                background-color: #afa6a6;
+            }
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+                border-radius: 10px;
+                background-color: #dcdcdc;
+            }
+        }
+
+    }
+}
+.ant-select-dropdown-menu{
+  .lableLan{
+    top: 11px;
+  }
+}
+.lableLan{
+  display: block;
+  width: 16px;
+  position: absolute;
+  top: 7px;
+  height: 11px;
+}
+.language{
+  span{
+        margin-left: 20px;
+  }
+}
+.cn-language{
+  background: url(../images/cn.png) center no-repeat;
+}
+.us-language{
+  background: url(../images/us.png) center no-repeat;
+}
+.info-wapper{
+  margin: 30px 5%;
+  .info-box{
+    margin-bottom: 12px;
+    label{
+      width: 120px;
+      line-height: 20px;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f3f5f7;
+      color: #07111b;
+      font-weight: 700;
+    }
+    div{
+      width: 708px;
+      margin-left: 8px;
+      height: 61px;
+      line-height: 20px;
+      padding: 20px 0 20px 22px;
+      border-bottom: 1px solid #d9dde1;
+    }
+  }
+}

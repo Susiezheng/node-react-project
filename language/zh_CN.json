@@ -1,0 +1,16 @@
+{
+ "home":"首页",
+ "cn":"中文",
+ "us":"英文",
+ "backUp":"返回",
+ "version":"版权所有© 2002-至今",
+ "companyName":"深圳市长亮科技股份有限公司",
+ "platform":"自动化测试管理平台",
+  "demand":"需求",
+  "test":"测试",
+  "defect":"缺陷",
+  "manage":"管理",
+  "user":"用户",
+  "center":"中心",
+  "loginOutMessage" : "确定是否退出？"
+}

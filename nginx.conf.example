@@ -1,0 +1,48 @@
+server {
+    root         /data/www;
+    listen       8080 default_server;
+    listen       [::]:8080 default_server;
+    server_name  localhost;	
+
+#    location / {
+#        proxy_pass  http://172.20.20.70:88;
+#    }
+
+	
+    location /rpc/ {
+        proxy_pass http://10.24.1.66:8800/;
+        proxy_redirect default;
+    }
+    
+    location /gateway/ {
+        proxy_pass  http://10.24.1.66:9099/;
+        proxy_redirect off;
+    }
+    
+    location /automation {
+        proxy_pass  http://172.20.20.70:88/automation;
+        proxy_redirect off;
+
+    }
+    location /cmdb {
+        proxy_pass  http://172.20.20.70:88/cmdb;
+        client_max_body_size    1000m;
+        proxy_redirect off;
+    }
+
+    location /zk {
+        proxy_pass  http://172.20.20.70:88/zk;
+        proxy_redirect off;
+    }
+
+    location /assistant/ {
+        proxy_pass  http://172.20.20.70:88/;
+        proxy_redirect off;
+    }
+
+    location /drs/ {
+        proxy_pass http://10.24.1.90:8081/;
+        proxy_redirect default;
+    }
+}
+

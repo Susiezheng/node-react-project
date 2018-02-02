@@ -1,0 +1,60 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5384616;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    color: inherit;
+}
+button,input{outline:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img,iframe{border:0;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}
+ul,li{list-style:none;}
+caption,th{text-align:left;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,textarea,select{*font-size:100%;}
+i{font-style:normal;}
+a{text-decoration:none; cursor:pointer;
+  &:hover{text-decoration:none; cursor:pointer;}
+}
+.tc{ text-align:center;}
+.tl{ text-align:left;}
+.tr{ text-align:right;}
+.unl{ text-decoration:underline;}
+.unc{text-decoration:line-through;}
+.no-unl{ text-decoration:none;}
+/*定位*/
+.bc{ margin:0 auto;}
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.clear-fix:after,.ant-spin-container:after{
+   content: "";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden
+}
+//滚动条样式
+&::-webkit-scrollbar {
+    width: 10px;
+    background-color: @menu-bk-color;
+}
+&::-webkit-scrollbar-thumb {
+    background-color: #BDBDBD;
+    border-radius:5px;
+}
+&::-webkit-scrollbar-track {
+    background-color: #fff;
+    filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;
+}

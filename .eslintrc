@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    # 禁止使用alert confirm prompt
+    "no-alert": 0,
+    # 禁止使用数组构造器
+    "no-array-constructor": 2,
+    # 禁止使用arguments.caller或arguments.callee
+    "no-caller": 1,
+    # 禁止使用console
+    "no-console": 2,
+    # 禁止使用debugger
+    "no-debugger": 2,
+    # 禁止修改const声明的变量
+    "no-const-assign": 2,
+    # 禁止使用eval
+    "no-eval": 1,
+    # 禁止省略浮点数中的0 .5 3.
+    "no-floating-decimal": 2,
+    # 禁止重复的函数声明
+    "no-func-assign": 2,
+    # 不能有不规则的空格
+    "no-irregular-whitespace": 2,
+    # 禁用var，用let和const代替
+    "no-var": 0,
+    # 禁用void操作符
+    "no-void": 2,
+    # 禁用with
+    "no-with": 2,
+    # 变量名长度
+    "id-length": 0
+  }
+}

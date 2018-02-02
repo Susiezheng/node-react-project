@@ -1,0 +1,16 @@
+{
+    "home":"Home",
+    "cn":"Chinese",
+    "us":"English",
+    "backUp":"BackUp",
+    "version":"Copyright © 2002-present",
+    "companyName":"Shenzhen Mayor Technology Co., Ltd",
+    "platform":"Automated test platform",
+    "demand":"Demand",
+    "test":"Test",
+    "defect":"Defect",
+    "manage":"Manage",
+    "center":" Center",
+    "user":"User ",
+    "loginOutMessage" : "Determine whether to quit?"
+}

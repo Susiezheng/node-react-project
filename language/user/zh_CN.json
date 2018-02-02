@@ -1,0 +1,9 @@
+{
+  "chooseRole" : "选择角色",
+  "ok" : "确定",
+  "cancel" : "取消",
+  "systemName" : "自动化测试管理平台",
+  "loginMessage" : "请输入用户名",
+  "pwdMessage" : "请输入密码",
+  "login" : "登录"
+}

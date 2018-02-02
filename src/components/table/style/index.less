@@ -1,0 +1,41 @@
+.ant-table{
+  .column-left{text-align: left;
+     span{text-align: left;}
+  }
+  .column-center{text-align: center;
+     span{text-align: center;}
+  }
+  .column-right{text-align: right;
+    span{text-align: right;}
+  }
+}
+.ant-table-tbody > tr > td{
+  padding: 12px 8px;
+}
+.custom-filter-dropdown{padding: 8px;border-radius: 6px;background: #fff;box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+     input{width: 130px;margin-right: 8px;}
+}
+.highlight{color: #f50;}
+/**
+*去掉表头滚动边框
+*/
+.ant-table-header{overflow:hidden!important;margin-bottom:0!important;padding-bottom:0!important;}
+.ant-table-thead{
+  th{white-space: nowrap;}
+}
+
+/*表格属性*/
+.assistant-table{
+  .column-list{position: absolute;right: 230px;top: 0px;line-height: 28px;
+    i{cursor: pointer;}
+  }
+  .selected{position:absolute;margin-top:-40px;margin-left:10px;}
+  .no-page-selected{position:absolute;margin:10px;}
+  .columns-selected{position: absolute;z-index:1000;left:-107.5px;width: 235px;background: #4b5960;border: 1px solid #ddd;padding: 8px 16px;color: #fff;border-radius: 4px;
+    &:before{position: absolute;width: 0;height: 0;content:'';left:105px;top:-18px;border: 8px solid transparent;border-bottom: 10px solid #4b5960;}
+    li{float:left;padding:5px 2px;width:100px;
+      &:hover{background: #37474f;}
+    }
+  }
+}
+
