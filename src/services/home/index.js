@@ -33,6 +33,11 @@ class userService {
     const header = {};
     MyFetch.delete(`${API.deletePwd}`, header, options, callback);
   }
+  //多条件查询
+  onSearch(options, callback) {
+    const header = {};
+    MyFetch.post(`${API.onSearch}`, header, options, callback);
+  }
 }
 
 export default new userService();

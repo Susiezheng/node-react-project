@@ -30,7 +30,8 @@ class Content extends Component {
   };
   handleOnSign = () => {
     let data = {
-      email: '123@qq.com',
+      email: '345zsq@qq.com',
+      num: 3,
       password: '123123',
       confirmPassword: '123123'
     };
@@ -50,9 +51,17 @@ class Content extends Component {
   };
   handleOnDelete = () => {
     let data = {
-      id: '5a7945c309b5ee278c19804e',
+      id: '5a7945c309b5ee278c19804e'
     };
     IndexService.deletePwd(data, res => {
+      console.log(res, '123');
+    });
+  };
+  handleOnSearch = () => {
+    let data = {
+      email: '1'
+    };
+    IndexService.onSearch(data, res => {
       console.log(res, '123');
     });
   };
@@ -104,6 +113,12 @@ class Content extends Component {
                     </a>
                     <a className="_3dt6pmM6" onClick={this.handleOnUpdatePwd}>
                       <span className="_1BNdmLFe">修改密码</span>
+                    </a>
+                    <a className="_3dt6pmM6" onClick={this.handleOnSearch}>
+                      <span className="_1BNdmLFe">多条件查询</span>
+                    </a>
+                    <a className="_3dt6pmM6" onClick={this.handleOnSearch}>
+                      <span className="_1BNdmLFe">多条件查询</span>
                     </a>
                   </div>
                 </div>
