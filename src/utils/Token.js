@@ -1,5 +1,5 @@
 "use strict";
-import { message } from 'edspUI';
+import { message } from 'baiscUI';
 import Fetch from './Fetch';
 import jwt_decode from 'jwt-decode';
 import { Tools } from 'Utils';

@@ -1,5 +1,5 @@
 "use strict";
-import { message, Fetch } from 'edspUI';
+import { message, Fetch } from 'baiscUI';
 
 import { Tools } from 'Utils';
 import { debug } from 'util';

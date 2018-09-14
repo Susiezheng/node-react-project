@@ -151,7 +151,7 @@ module.exports = {
         extensions: ['.js', '.json', '.less', '.css'],
         //别名配置
         alias: {
-            'edspUI': 'components',
+            'baiscUI': 'components',
             'Utils': 'utils',
             'Services': 'services'
         }

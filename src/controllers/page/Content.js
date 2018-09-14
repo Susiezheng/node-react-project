@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { hashHistory, Link } from 'react-router';
-import { Button, Menu, Dropdown, Icon, Input, message, Select, Row, Col } from 'antd';
+import { Upload, message, Button, Icon } from 'antd';
 import './style';
 import './style/Page.css';
 import ListSearch from './ListSearch';
@@ -70,6 +70,20 @@ class Content extends Component {
     const card = {
       showSearch
     };
+    const props = {
+      name: 'file',
+      action: '/zsq/upload',
+      onChange(info) {
+        if (info.file.status !== 'uploading') {
+          console.log(info.file, info.fileList);
+        }
+        if (info.file.status === 'done') {
+          message.success(`${info.file.name} file uploaded successfully`);
+        } else if (info.file.status === 'error') {
+          message.error(`${info.file.name} file upload failed.`);
+        }
+      }
+    };
     return (
       <main className="nraeUgP6">
         <div>
@@ -120,6 +134,11 @@ class Content extends Component {
                     <a className="_3dt6pmM6" onClick={this.handleOnSearch}>
                       <span className="_1BNdmLFe">多条件查询</span>
                     </a>
+                    <Upload {...props}>
+                      <Button>
+                        <Icon type="upload" /> Click to Upload
+                      </Button>
+                    </Upload>
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@
     "ideploy": "node ./tools/ideploy.js",
     "dll": "./node_modules/.bin/webpack --config webpack.dll.config.js -p --progress --colors --profile"
   },
-  "author": "sunline's front-end workers",
+  "author": "susie",
   "license": "MIT",
   "homepage": "#",
   "keywords": [
@@ -29,8 +29,7 @@
   ],
   "main": "./src/index.js",
   "repository": {
-    "type": "git",
-    "url": "git@git.yfb.sunline.cn:edsp/edsp-ate.git"
+    "type": "git"
   },
   "jest": {
     "transform": {}

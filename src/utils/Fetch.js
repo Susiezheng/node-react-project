@@ -1,5 +1,5 @@
 "use strict";
-import { message, Fetch } from 'edspUI';
+import { message, Fetch } from 'baiscUI';
 import jwt_decode from 'jwt-decode';
 import { hashHistory } from 'react-router';
 import en_US from '../../language/en_US.json';
